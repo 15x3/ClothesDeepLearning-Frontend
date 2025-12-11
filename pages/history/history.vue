@@ -53,9 +53,11 @@
 		<!-- 底部导航 -->
 		<view class="bottom-nav">
 			<view class="nav-item" @click="goToHome">
+				<image src="/static/tab-home.png" class="nav-icon"></image>
 				<text class="nav-text">首页</text>
 			</view>
 			<view class="nav-item active">
+				<image src="/static/tab-history-active.png" class="nav-icon"></image>
 				<text class="nav-text">历史记录</text>
 			</view>
 		</view>
@@ -293,6 +295,7 @@
 		flex: 1;
 		height: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
@@ -302,7 +305,13 @@
 		border-top: 4rpx solid #2196F3;
 	}
 
+	.nav-icon {
+		width: 48rpx;
+		height: 48rpx;
+		margin-bottom: 8rpx;
+	}
+
 	.nav-text {
-		font-size: 28rpx;
+		font-size: 24rpx;
 	}
 </style>
